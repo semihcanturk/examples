@@ -26,8 +26,8 @@ eval_every = math.ceil(num_epochs / 1000)
 # for remote
 # os.environ["hostname"] = "buzatu@hawk.ml.jku.at"
 # os.environ["password"] =  "LZ46GyzX"
-# os.environ["port"] = "5792"
-os.environ["hostname"] = "root@159.69.11.199"
-os.environ["password"] = "0oKG1L2sz0lVqNe1xo82HQLGc3ah"
+os.environ["BUDDY_PORT"] = "5792"
+os.environ["BUDDY_HOSTNAME"] = "root@159.69.11.199"
+os.environ["BUDDY_PASSWORD"] = "0oKG1L2sz0lVqNe1xo82HQLGc3ah"
 
 tensorboard = experiment_buddy.deploy(use_remote=True, sweep_yaml="")
