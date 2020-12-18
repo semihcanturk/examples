@@ -2,10 +2,6 @@ import math
 import jax.experimental.optimizers
 import experiment_buddy
 import os
-from fabric.config import  Config
-# from fabric import Config
-from fabric.connection import contextmanager
-# contextmanager.
 
 initial_lr = .0001
 
