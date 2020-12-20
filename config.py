@@ -24,8 +24,8 @@ learning_rate = jax.experimental.optimizers.inverse_time_decay(initial_lr, decay
 eval_every = math.ceil(num_epochs / 1000)
 
 # for remote
-os.environ["hostname"] = "buzatu@hawk.ml.jku.at"
-os.environ["password"] =  "LZ46GyzX"
+os.environ["BUDDY_HOSTNAME"] = "buzatu@hawk.ml.jku.at"
+os.environ["BUDDY_PASSWORD"] =  "LZ46GyzX"
 os.environ["BUDDY_PORT"] = "5792"
 # os.environ["BUDDY_HOSTNAME"] = "root@159.69.11.199"
 # os.environ["BUDDY_PASSWORD"] = "0oKG1L2sz0lVqNe1xo82HQLGc3ah"
