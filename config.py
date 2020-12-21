@@ -1,9 +1,9 @@
 import math
+import os
 
 import jax.experimental.optimizers
 
 import experiment_buddy
-import os
 
 initial_lr = .0001
 
@@ -37,8 +37,7 @@ os.environ["BUDDY_HOSTNAME"] = "root@159.69.11.199"
 os.environ["BUDDY_PASSWORD"] = "0oKG1L2sz0lVqNe1xo82HQLGc3ah"
 
 
-import os
-where_am_i = os.getenv('WHEREAMI')
+where_am_i = os.getenv('WHEREAMI_BUDDI')
 if where_am_i == 'remote':
     tensorboard = experiment_buddy.deploy(use_remote=False, sweep_yaml="")
 else:
