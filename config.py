@@ -36,5 +36,5 @@ eval_every = math.ceil(num_epochs / 1000)
 os.environ["BUDDY_HOSTNAME"] = "root@159.69.11.199"
 os.environ["BUDDY_PASSWORD"] = "0oKG1L2sz0lVqNe1xo82HQLGc3ah"
 
-os.environ["WANDB_API_KEY"] = "123"
+# os.environ["WANDB_API_KEY"] = "123"
 tensorboard = experiment_buddy.deploy(use_remote=True, sweep_yaml="")
