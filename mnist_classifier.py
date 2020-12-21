@@ -29,7 +29,6 @@ from jax.experimental import optimizers
 from jax.experimental import stax
 from jax.experimental.stax import Dense, Relu, LogSoftmax
 
-print("hello mnist_classifier chnaged locally!")
 import config
 import datasets
 
@@ -97,7 +96,7 @@ if __name__ == "__main__":
         epoch_time = time.time() - start_time
 
         params = get_params(opt_state)
-        print("hello mnist_classifier chnaged locally!")
+        print("hello mnist_classifier changed locally!")
         # train_acc = accuracy(params, (train_images, train_labels))
         # test_acc = accuracy(params, (test_images, test_labels))
         # config.tensorboard.add_scalar("train_acc", train_acc)
