@@ -29,6 +29,7 @@ from jax.experimental import optimizers
 from jax.experimental import stax
 from jax.experimental.stax import Dense, Relu, LogSoftmax
 
+print("hello mnist_classifier chnaged locally!")
 import config
 import datasets
 
