@@ -97,9 +97,9 @@ if __name__ == "__main__":
         epoch_time = time.time() - start_time
 
         params = get_params(opt_state)
-        print("hello mnist_classifier changed locally!")
-        # train_acc = accuracy(params, (train_images, train_labels))
-        # test_acc = accuracy(params, (test_images, test_labels))
+        print("hello mnist_classifier_tmp changed locally!")
+        train_acc = accuracy(params, (train_images, train_labels))
+        test_acc = accuracy(params, (test_images, test_labels))
         # config.tensorboard.add_scalar("train_acc", train_acc)
         # config.tensorboard.add_scalar("test_acc", test_acc)
         # print("Epoch {} in {:0.2f} sec".format(epoch, epoch_time))
