@@ -54,6 +54,7 @@ init_random_params, predict = stax.serial(
 if __name__ == "__main__":
 
     tensorboard = config.tensorboard
+
     rng = random.PRNGKey(0)
 
     num_epochs = 10
