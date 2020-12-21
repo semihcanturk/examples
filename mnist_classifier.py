@@ -53,6 +53,7 @@ init_random_params, predict = stax.serial(
     Dense(10), LogSoftmax)
 
 if __name__ == "__main__":
+
     tensorboard = config.tensorboard
     rng = random.PRNGKey(0)
 
