@@ -30,4 +30,5 @@ learning_rate = jax.experimental.optimizers.inverse_time_decay(initial_lr, decay
 eval_every = math.ceil(num_epochs / 1000)
 
 REMOTE = args.remote
+print("#######", REMOTE)
 tensorboard = experiment_buddy.deploy(use_remote=REMOTE, sweep_yaml="")
