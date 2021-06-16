@@ -16,7 +16,7 @@ momentum_mass = 0.99
 weight_norm = 0.00
 
 num_epochs = 1000
-host = ""
+host = "mila"
 
 experiment_buddy.register(locals())
 
