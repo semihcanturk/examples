@@ -16,7 +16,6 @@ momentum_mass = 0.99
 weight_norm = 0.00
 
 num_epochs = 1000
-host = ""
 
 experiment_buddy.register(locals())
 
@@ -26,4 +25,4 @@ experiment_buddy.register(locals())
 learning_rate = jax.experimental.optimizers.inverse_time_decay(initial_lr, decay_steps, decay_factor, staircase=True)
 eval_every = math.ceil(num_epochs / 1000)
 
-tensorboard = experiment_buddy.deploy(host=host, sweep_yaml="")
+tensorboard = experiment_buddy.deploy(host=os.environ['BUDDY_HOST'], sweep_yaml="")
